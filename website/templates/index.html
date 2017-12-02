@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>DOC-Carbon-Emissions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset='utf-8' />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:200,300,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  </hgroup>
+</head>
+
+<body>
+  <top>
+    <a href="https://www.vitechinc.com/" /><img src="img/vitech.jpg" alt="vitech" height="80%"/></a>
+  </top>
+
+<div class="header-container">
+  <div class="header-wrapper">
+  <ul>
+    <li id="text1">get your</li>
+    <li id="text2">quote</li>
+    <li><div class="line"></div></li>
+    <li id="text3">Intellisurance provides its life insurance product
+      to its 1.4M customers. They offer 4 plans - Bronze, Silver, Gold and Platinum.
+      The base price for all these 4 plans is fixed, but the monthly premium for the plan varies based
+      on different factors.</li>
+    <li><button>calculate now</button></li>
+
+  </ul>
+  </div>
+</div>
+
+
+
+<div class="co2-problem1-container">
+
+  <form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<br>
+    <label for="mname">Middle Initial</label>
+    <input type="text" id="mname" name="middleinitial" placeholder="Your name..">
+<br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<br>
+<label for="fname">City</label>
+<input type="text" id="city" name="city" placeholder="Your name..">
+<br>
+<label for="mname">State</label>
+<input type="text" id="State" name="State" placeholder="Your name..">
+<br>
+<label for="lname">Zip</label>
+<input type="text" id="Zip" name="Zip" placeholder="Your last name..">
+<br>
+<label for="gender">gender</label><br>
+<select>
+  <option value="m">male</option>
+  <option value="f">female</option>
+  <option value="o">other</option>
+</select>
+<br>
+DOB<br>
+<label for="month">month</label>
+<input type="text" id="month" name="month" placeholder="month">
+<br>
+<label for="day">day</label>
+<input type="text" id="day" name="day" placeholder="day">
+<br>
+<label for="year">year</label>
+<input type="text" id="year" name="year" placeholder="year">
+<br>
+<label for="height">height</label>
+<input type="text" id="height" name="height" placeholder="height">
+<br>
+<label for="weight">weight</label>
+<input type="text" id="weight" name="weight" placeholder="weight">
+<br>
+<label for="smoke">smoker?</label>
+<select>
+  <option value="yes">yes</option>
+  <option value="no">no</option>
+</select>
+<br>
+<label for="income">income</label> $
+<input type="text" id="income" name="income" placeholder="$">
+<br>
+plan type<br>
+<label for="people">people covered</label>
+<select>
+  <option value="self">self</option>
+  <option value="selffam">self and spouse</option>
+  <option value="selffam">family</option>
+</select>
+<br>
+<label for="marrstat">marital status</label>
+<select>
+  <option value="sing">single</option>
+  <option value="marr">married</option>
+  <option value="div">divorced</option>
+  <option value="widow">widowed</option>
+  <option value="engaged">engaged</option>
+</select>
+<br>
+<label for="optional">optional insured</label><br>
+<input type="radio" name="op" />$500k</input>
+<input type="radio" name="op" />other</input><input type="text" id="opother" name="opother" placeholder="$">
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<div class="co2-problem2-container">
+  <div class="co2-problem2-wrapper">
+    <div id="text1">Rising Atmospheric CO2 levels contribute to the</br>
+      greenhouse gas effect. Among other effects, this increase is</br>
+      predicted to lead to up to 4&#8457; warming in the next century.</div>
+    <div id="text2">
+      <b>Industrial Processes</b></br>
+      many industrial processes</br>
+      give off CO2 as a byproduct
+    </div>
+    <div id="text3">
+      <b>Deforestation</b></br>
+      fewer plants and trees,</br>
+      which usually absorb CO2
+    </div>
+    <div id="text4">
+      <b>Transportation</b></br>
+      burns CO2 through the</br>
+      combustion of fossil fuels
+    </div>
+    <div id="text5">
+      <b>Changes in </br>
+        Plant Growth</b></br>
+      due to increased</br>
+      respiration
+    </div>
+    <div id="text6">
+      <b>Warming </br>
+        Temperatures</b></br>
+      due to an increased</br>
+      greenhouse gas effect
+    </div>
+    <div id="text7">
+      <b>Ocean Acidification</b></br>
+      due to higher diffusion of</br>
+      CO2 into oceans
+    </div>
+
+    <div id="img1"><img src="img/green-all.svg" alt="green1"/></div>
+    <div id="img2"><img src="img/car.svg" alt="car"/></div>
+    <div id="img3"><img src="img/line.svg" alt="line"/></div>
+    <div id="img4"><img src="img/temp.svg" alt="temp"/></div>
+    <div id="img5"><img src="img/nautilus.svg" alt="naut"/></div>
+    <div id="text8">Sources</div>
+    <div id="text9">Effects</div>
+</div>
+</div>
+
+<div class="spaceholder">
+</div>
+
+<div class="doc-data-container">
+  <div class="doc-data-wrapper">
+    <div id="text1">DOC Emissions</div>
+    <div class="line"></div>
+    <div class="chart-container" data-aos="fade-right">
+      <canvas id="cTotalPerTerm"></canvas>
+    </div>
+    <div class="chart-wrap">
+      <div class="chart-container2" data-aos="fade-right">
+        <canvas id="bySubClub"></canvas>
+      </div>
+      <div class="chart-container3" data-aos="fade-right">
+        <canvas id="byMethod"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeBjAaoCzZ1BXdvAer20SyCF0NGItX5rI&callback=myMap"></script>
+
+<script src="cloudparallax.js"></script>
+
+<script> //firebase
+AOS.init();
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD62wgR6dr6Xm6BfzAacsrZypo3cE06yDs",
+      authDomain: "doc-carbon-emissions.firebaseapp.com",
+      databaseURL: "https://doc-carbon-emissions.firebaseio.com",
+      projectId: "doc-carbon-emissions",
+      storageBucket: "doc-carbon-emissions.appspot.com",
+      messagingSenderId: "927694840026"
+    };
+    firebase.initializeApp(config);
+    const database = firebase.database();
+    // database.ref().on('value', gotData, errData);
+    var allTrips;
+    var terms = ['10 Spring', '10 Winter', '11 Spring', '11 Winter', '12 Spring', '12 Winter', '13 Spring', '13 Winter', '14 Spring', '14 Winter', '15 Spring', '15 Winter', '16 Spring', '16 Summer', '16 Winter', '17 Spring'];
+    var dates = [];
+    var trips = [];
+    var subClubs = ['LCC', 'CnT', 'DMC', 'WSC', 'DMBC'];
+    var clubEmissions = [25322.62, 85061.396, 52991.4,10313.25, 2436];
+    var gEmissions = [52.9866, 0.9108, 31.1008, 1.3248, 41.8446, 30.0222, 26.1462, 35.5566, 72.9396, 55.767586, 58.23255, 97.454628, 86.4192, 15.406, 114.891416, 100.4526];
+    let myChart = document.getElementById('cTotalPerTerm').getContext('2d');
+    let newChart = document.getElementById('bySubClub').getContext('2d');
+    let flightChart = document.getElementById('byMethod').getContext('2d');
+    Chart.defaults.global.defaultFontFamily = 'Montserrat';
+    Chart.defaults.global.defaultFontSize = 14;
+    Chart.defaults.global.defaultFontColor = '#777';
+    let massPopChart = new Chart(myChart, {
+      type: 'line', //bar, horizontalbar, pie, line doughnut, radar, polarArea
+      data:{
+        labels: terms,
+        datasets:[{
+          label:'Carbon Emissions by Metric Tons',
+          data:gEmissions,
+          backgroundColor:'#C24938',
+          borderWidth: 0,
+          borderColor: '#C24938',
+          hoverBorderWidth:0,
+          hoverBorderColor:'white',
+        }],
+      },
+      options:{
+        title: {
+          display: true,
+          text: "Total Carbon Emissions by Term",
+          fontSize: 25,
+        },
+        legend: {
+          display: false,
+          position: 'right',
+          labels: {
+            fontColor: 'black'
+          }
+        },
+        layout: {
+          padding: {
+          }
+        },
+        tooltips: {
+          enabled: true,
+        },
+        elements: {
+          arc: {
+            borderWidth: 0
+          }
+        },
+        scales: {
+          xAxes: [{
+            display: true,
+            gridLines: {
+              display: false,
+            }
+          }],
+          yAxes: [{
+            display: false,
+            gridLines: {
+              display: false,
+            }
+          }],
+        },
+      }
+    });
+    let SubClubChart = new Chart(newChart, {
+      type: 'pie', //bar, horizontalbar, pie, line doughnut, radar, polarArea
+      data:{
+        labels: subClubs,
+        datasets:[{
+          label:'Carbon Emissions by Metric Tons',
+          data:clubEmissions,
+          backgroundColor: [
+            '#CA9C82',
+            '#ABAC9A',
+            '#7DA3AC',
+            '#61847D',
+            '#5092AB',
+            '#2C4063',
+            '#244043',
+            '#312728'
+          ],
+          borderWidth: 0,
+          borderColor: 'black',
+          hoverBorderWidth:0,
+          hoverBorderColor:'white',
+        }],
+      },
+      options:{
+        title: {
+          display: true,
+          text: "Carbon Emissions by Sub Club",
+          fontSize: 25,
+        },
+        layout: {
+          padding: {
+          }
+        },
+        tooltips: {
+          enabled: true,
+        },
+        elements: {
+          arc: {
+            borderWidth: 0
+          }
+        },
+      }
+    });
+    let flyingChart = new Chart(flightChart, {
+      type: 'horizontalBar', //bar, horizontalbar, pie, line doughnut, radar, polarArea
+      data:{
+        labels: ['Driving', 'Flying'],
+        datasets:[{
+          label:'Carbon Emissions by Metric Tons',
+          data:[32.324916, 284.8443],
+          backgroundColor:['#8A7C57', '#2C4063'],
+          borderWidth: 0,
+          borderColor: '#C24938',
+          hoverBorderWidth:0,
+          hoverBorderColor:'white',
+        }],
+      },
+      options:{
+        title: {
+          display: true,
+          text: "Driving VS Flying",
+          fontSize: 25,
+        },
+        legend: {
+          display: false,
+          position: 'right',
+          labels: {
+            fontColor: 'black'
+          }
+        },
+        layout: {
+          padding: {
+          }
+        },
+        tooltips: {
+          enabled: true,
+        },
+        elements: {
+          arc: {
+            borderWidth: 0
+          }
+        },
+        scales: {
+          xAxes: [{
+            display: true,
+            gridLines: {
+              display: false,
+            }
+          }],
+          yAxes: [{
+            display: false,
+            gridLines: {
+              display: false,
+            }
+          }],
+        },
+      }
+    });
+    // var inView = false;
+    // function isScrolledIntoView(elem)
+    // {
+    //     var docViewTop = $(window).scrollTop();
+    //     var docViewBottom = docViewTop + $(window).height();
+    //
+    //     var elemTop = $(elem).offset().top;
+    //     var elemBottom = elemTop + $(elem).height();
+    //
+    //     return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+    // }
+    // $(window).scroll(function() {
+    //     if (isScrolledIntoView('.chart-container')) {
+    //         if (inView) { return; }
+    //         inView = true;
+    //         database.ref().on('value', gotData, errData);
+    //     } else {
+    //         inView = false;
+    //     }
+    // });
+database.ref().on('value', gotData, errData);
+    function gotData(data){
+      allTrips = data.val();
+      var keys = Object.keys(allTrips); // for each object in objects
+      for (var i = 0; i < keys.length; i++){
+        var k = keys[i];
+        trips.push(k);
+        var date = allTrips[k].date;
+        date = new Date(date.substr(0,10));
+        dates.push(date);
+        var gEmission = allTrips[k].gEmission;
+        gEmissions.push(gEmission);
+      }
+    }
+    function errData(err){
+      console.log('Error!');
+      console.log(err);
+    }
+  </script>
+  <script src='//d3js.org/d3.v3.min.js' charset='utf-8'></script>
+
+
+
+  <script> //header fade in
+  function isScrolledIntoView(elem)
+  {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height();
+      return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+  }
+   $(".header-container ul #text1").delay(700).animate({"opacity": "1"}, 700);
+   $(".header-container ul #text2").delay(1000).animate({"opacity": "1"}, 700);
+   $(".header-container ul .line").delay(1200).animate({"opacity": "1"}, 700);
+   $(".header-container ul #text3").delay(1400).animate({"opacity": "1"}, 700);
+   $(".header-container ul button").delay(1600).animate({"opacity": "1"}, 700);
+   $(window).scroll(function(){
+     $(".header-container ul #text1").css("opacity", 1 - $(window).scrollTop() / 600);
+     $(".header-container ul #text2").css("opacity", 1 - $(window).scrollTop() / 600);
+     $(".header-container ul .line").css("opacity", 1 - $(window).scrollTop() / 800);
+     $(".header-container ul #text3").css("opacity", 1 - $(window).scrollTop() / 1000);
+     $(".header-container ul button").css("opacity", 1 - $(window).scrollTop() / 1200);
+     if (isScrolledIntoView('.co2-problem1-container')) {
+       if (inView) {return ;}
+       inView = true;
+       $('.co2-problem1-container #text1').delay(700).animate({"opacity":"1"}, 700);
+       $('.co2-problem1-container .line').delay(700).animate({"opacity":"1"}, 700);
+       $('.co2-problem1-container #text2').delay(700).animate({"opacity":"1"}, 700);
+     } else {
+       inView = false;
+     }
+   });
+   $(".header-container ul button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".co2-problem1-container").offset().top},
+        'slow');
+});
+$('.sidenav ul li').hover(function() {
+      $(this).find('img').hide();
+      $(this).find('.hover').show();
+  }, function() {
+      $(this).find('.hover').hide();
+      $(this).find('img').show();
+});
+  $(".sidenav ul #visual button").click(function() {
+     $('html,body').animate({
+         scrollTop: $(".header-container").offset().top},
+         'slow');
+  });
+  $(".sidenav ul #co2 button").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".co2-problem1-container").offset().top},
+          'slow');
+  });
+  $(".sidenav ul #doc button").click(function() {
+     $('html,body').animate({
+         scrollTop: $(".doc-data-container").offset().top},
+         'slow');
+});
+ </script>
+
+
+</html>
