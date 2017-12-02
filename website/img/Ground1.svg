@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="934px" viewBox="0 0 1440 934" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Ground1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page-InVision-Mock" transform="translate(0.000000, -4609.000000)" fill="#606D5D">
+            <g id="Footprint" transform="translate(0.000000, 3710.000000)">
+                <g id="Group-10">
+                    <path d="M1440,1365.57597 L1440,1112.05891 L1375.66009,1131.71429 C1375.66009,1131.71429 654.404894,1132.20856 624.311219,1131.64538 C586.602097,1130.93968 481.295522,1090.32797 481.295522,1090.32797 L313.728389,1090.32797 L220.596361,1007.57789 L58.8040009,943.879947 L0,899 L0,1365.57597 L0,1832.15193 L58.8040009,1787.27198 L220.596361,1723.57404 L313.728389,1640.82396 L481.295522,1640.82396 C481.295522,1640.82396 586.602097,1600.21225 624.311219,1599.50655 C654.404894,1598.94337 1375.66009,1599.43764 1375.66009,1599.43764 L1440,1619.09302 L1440,1365.57597 Z" id="Ground1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

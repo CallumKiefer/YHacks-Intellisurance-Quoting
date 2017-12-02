@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="291" height="291" viewBox="0 0 291 291">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="145.5" cy="145.5" r="145.5" fill="#FFF"/>
+        <text fill="#1D1E18" font-family="Montserrat-Bold, Montserrat" font-size="64" font-weight="bold">
+            <tspan x="65.948" y="125">214.5 </tspan>  <tspan x="39.84" y="203" font-size="36">metric tons </tspan> <tspan x="85.506" y="247" font-family="Montserrat-Medium, Montserrat" font-size="36" font-weight="400">of CO2</tspan>
+        </text>
+    </g>
+</svg>

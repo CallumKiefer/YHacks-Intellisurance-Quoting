@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="63px" viewBox="0 0 70 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>DOC Emissions Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Scrolling-Menu-Buttons" transform="translate(-189.000000, -290.000000)">
+            <g id="Group" transform="translate(190.000000, 121.000000)">
+                <g id="Group-9" transform="translate(0.000000, 102.000000)">
+                    <g id="DOC-Emissions-Icon" transform="translate(0.000000, 69.000000)">
+                        <g id="Group-6">
+                            <g id="Group-5-Copy" stroke="#65655E" stroke-width="4" stroke-linecap="square">
+                                <path d="M1,0 L1,43.6629942" id="Line"></path>
+                                <path d="M1.08712844,44.2173256 L66.5,44.2173256" id="Line-Copy-3"></path>
+                            </g>
+                            <rect id="Rectangle-42" fill="#65655E" x="8" y="25" width="5" height="21"></rect>
+                            <rect id="Rectangle-42-Copy" fill="#65655E" x="15" y="32" width="5" height="14"></rect>
+                            <rect id="Rectangle-42-Copy-2" fill="#65655E" x="28" y="15" width="5" height="31"></rect>
+                            <rect id="Rectangle-42-Copy-3" fill="#65655E" x="35" y="27" width="5" height="19"></rect>
+                            <rect id="Rectangle-42-Copy-2" fill="#65655E" x="48" y="3" width="5" height="43"></rect>
+                            <rect id="Rectangle-42-Copy-3" fill="#65655E" x="55" y="18" width="5" height="28"></rect>
+                        </g>
+                        <text id="DOC" font-family="Montserrat-Bold, Montserrat" font-size="14" font-weight="bold" fill="#65655E">
+                            <tspan x="17.666" y="60">DOC</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
