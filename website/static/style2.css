@@ -136,7 +136,7 @@ input[type=submit]:hover {
   position: relative;
   background-color: #c3d0db;
   height: 100vh;
-  background-image:url(../img/treesroad.png);
+  background-image:url(img/treesroad.png);
   background-repeat: no-repeat;
   background-size:100vw;
   background-position:0% 100%;
