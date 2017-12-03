@@ -138,7 +138,7 @@ input[type=submit]:hover {
   position: relative;
   background-color: #c3d0db;
   height: 100vh;
-  background-image:url(img/treesroad.png);
+  background-image:url(../img/treesroad.png);
   background-repeat: no-repeat;
   background-size:100vw;
   background-position:0% 100%;
@@ -178,8 +178,7 @@ input[type=submit]:hover {
   font-size: 10vh;
   font-weight: 600;
   text-shadow: -0.2vw 0.2vh 0 #7CC23D;
-  color:
-  opacity:0;
+  opacity: 0;
 }
 
 .co2-problem2-wrapper ul .line {

@@ -42,19 +42,19 @@
 </div>
 
 <div class="formcontent">
-  <form action="">
+  <form action="/processing", method="post">
     <center><b>Personal Details:<br></b></center><br>
     <label for="fname">First Name &nbsp;&nbsp;</label>
-    <input type="text" id="fname" name="firstname" placeholder="First name" size="31" maxlength="30">
+    <input type="text" id="fname" name="firstname" placeholder="First name" size="31" maxlength="30" required>
     <label for="mname">&nbsp;&nbsp;&nbsp;&nbsp;   Middle Initial &nbsp;&nbsp;</label>
-    <input type="text" id="mname" name="middleinitial" placeholder="M" size="2" maxlength="2">
+    <input type="text" id="mname" name="middleinitial" placeholder="M" size="2" maxlength="2" required>
     <label for="lname">&nbsp;&nbsp;&nbsp;&nbsp;   Last Name &nbsp;&nbsp;</label>
-    <input type="text" id="lname" name="lastname" placeholder="Last name" size="31" maxlength="30">
+    <input type="text" id="lname" name="lastname" placeholder="Last name" size="31" maxlength="30" required>
 <br>
 <div class="radiobuttonleft">
   <label for="gender">Gender&nbsp;&nbsp;</label>
   <div class="select-style">
-  <select>
+  <select name="gender" required>
     <option value="m">Male</option>
     <option value="f">Female</option>
     <option value="o">Other</option>
@@ -64,20 +64,20 @@
   <br>
 
   <label for="fname">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-  <input type="text" id="city" name="city" placeholder="City" size="35">
+  <input type="text" id="city" name="city" placeholder="City" size="35" required>
 
 <br>
 
 
 <label for="height">Height&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="text" id="height" name="height" placeholder="height" size="35" maxlength="2" >
+<input type="text" id="height" name="height" placeholder="height" size="35" maxlength="2" required>
 
 <br>
 
 
 <label for="smoke">Smoker&nbsp;&nbsp;</label>
 <div class="select-style">
-<select>
+<select name="smoke" required>
   <option value="yes">Yes</option>
   <option value="no">No</option>
 </select>
@@ -86,12 +86,12 @@
 
 
   <label for="month">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-  <input type="text" id="age" name="age" placeholder="age" size="35" maxlength="2">
+  <input type="text" id="age" name="age" placeholder="age" size="35" maxlength="2" required>
   <br>
 
 <label for="mname">State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 <div class="select-style">
-<select>
+<select name="states" required>
   <option value="Select">Select</option>
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
@@ -148,10 +148,10 @@
 </div>
 <br>
 <label for="weight">Weight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="text" id="weight" name="weight" placeholder="weight" size="35" maxlength="3">
+<input type="text" id="weight" name="weight" placeholder="weight" size="35" maxlength="3" required>
 <br>
 <label for="income">Income&nbsp;&nbsp;</label> $&nbsp;
-<input type="text" id="income" name="income" placeholder="0" size="35">
+<input type="text" id="income" name="income" placeholder="0" size="35" required>
 <br>
 </div>
 <label for="ptype"><b><br>Plan Type:</b>&nbsp;&nbsp;</label><br>
@@ -159,7 +159,7 @@
 <label for="people">People covered&nbsp;&nbsp;</label>
 <div class="select-style">
 
-<select>
+<select name="coverage" required>
   <option value="self">Self</option>
   <option value="selffam">Self and spouse</option>
   <option value="selffam">Family</option>
@@ -168,22 +168,26 @@
 <br>
 <label for="marrstat">Marital status:&nbsp;&nbsp;</label>
 <div class="select-style">
-<select>
+<select name="married_status" required>
   <option value="sing">Single</option>
   <option value="marr">Married</option>
 </select>
 </div><br>
 <label for="optional">Optional insured:&nbsp;&nbsp;</label>
-<input type="radio" name="op" />&nbsp;$500k&nbsp;&nbsp;</input>
-<input type="radio" name="op" />&nbsp;Other:&nbsp;&nbsp;</input><input type="text" id="opother" name="opother" placeholder="$">
+      <select name="optional" required>
+<input type="radio" name="op1" />&nbsp;$500k&nbsp;&nbsp;</input>
+<input type="radio" name="other" />&nbsp;Other:&nbsp;&nbsp;</input><input type="text" id="opother" name="opother" placeholder="$">
+          </select>
 <br><br>
 <label for="optional"><b><center>Pre-Existing Conditions:</center></b>&nbsp;&nbsp;</label><br>
 <div class="otherformleft">
+    <select name="preexisting" required>
   <label for="op">Cough with hemmorage&nbsp;&nbsp;</label><br>
   <label for="op2">Cocaine abuse with intoxicatiuon delirium&nbsp;&nbsp;</label><br>
   <label for="op3">Tachycardia&nbsp;&nbsp;</label><br>
   <label for="op4">Diarrhea&nbsp;&nbsp;</label><br>
   <label for="op5">Rheumatoid lung disease&nbsp;&nbsp;</label>
+        </select>
 </div>
 <div class="otherformright">
 <input type="radio" name="y1" />&nbsp;Yes&nbsp;&nbsp;</input>
