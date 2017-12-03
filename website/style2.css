@@ -16,6 +16,7 @@ top{
   padding-left:3vh;
 }
 
+
 /**FORM**/
 
 .formcontainer{
@@ -55,19 +56,22 @@ top{
   width:49%;
   float:left;
   text-align:left;
+  margin-bottom:3vh;
+
 }
 
 .radiobuttonright{
   width:49%;
   float:right;
   text-align:left;
+  margin-bottom:3vh;
 
 }
 
 .otherformleft{
   width:49%;
   float:left;
-  text-align:left;
+  text-align:right;
 }
 
 .otherformright{
@@ -91,17 +95,43 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-    width: 25%;
-    background-color: #4CAF50;
+    width: 20%;
+    background-color: #606b5d;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 2.5vh ;
+    margin-top:4vw;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size:2.5vh;
+    font-family:Avenir Next;
 }
 input[type=submit]:hover {
-    background-color: #45a049;
+    opacity:0.6;
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 38vh;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+    display:inline-block;
+    margin-top:2vh;
+}
+
+.select-style select {
+    padding: 5px 15px;
+    width: 150%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
 }
 
 .co2-problem2-container {
