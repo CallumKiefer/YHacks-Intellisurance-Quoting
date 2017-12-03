@@ -1,0 +1,352 @@
+body {
+  margin:0;
+  padding:0;
+  background-size: cover;
+  background-color: #c3d0db;
+  font-family: Avenir Next;
+  color:#455228;
+}
+
+top{
+  width:100vw;
+  height:9vh;
+  background-color:rgba(195, 208, 219, 0.6);
+  position:fixed;
+  z-index:100;
+  padding-left:3vh;
+}
+
+
+/**FORM**/
+
+.formcontainer{
+  background-color:#606C5D;
+  padding-bottom:9vh;
+}
+
+.formcontainer h1{
+  margin-top:2vw;
+  text-align: center;
+  font-size:10vh;
+  font-weight:100;
+  color:white;
+}
+
+.formcontainer h2{
+  text-align: center;
+  margin-top:-12vh;
+  font-size:10vh;
+  font-family:"Lily Script One";
+  color:white;
+}
+
+.titleform{
+  background-color:#606C5D;
+}
+
+.formcontent{
+  margin:auto;
+  width:70%;
+  background-color:white;
+  padding:4vw;
+  border-radius: 2vh;
+}
+
+.radiobuttonleft{
+  width:49%;
+  float:left;
+  text-align:left;
+  margin-bottom:7vh;
+
+}
+
+.radiobuttonright{
+  width:49%;
+  float:right;
+  text-align:left;
+  margin-bottom:7vh;
+
+}
+
+.otherformleft{
+  width:5%;
+  float:left;
+  text-align:left;
+}
+
+.otherformright{
+  width:95%;
+  float:right;
+  text-align:left;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    background-color: #e8f2e6;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #606b5d;
+    color: white;
+    padding: 2.5vh ;
+    margin-top:4vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:2.5vh;
+    font-family:Avenir Next;
+}
+input[type=submit]:hover {
+    opacity:0.6;
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 38vh;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("https://www.materialui.co/materialIcons/navigation/arrow_drop_down_grey_192x192.png") 97% / 15% no-repeat ;
+    display:inline-block;
+    margin-top:2vh;
+}
+
+.select-style select {
+    padding: 5px 15px;
+    width: 150%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.co2-problem2-container {
+  position: relative;
+  background-color: #c3d0db;
+  height: 100vh;
+  background-image:url(../img/treesroad.png);
+  background-repeat: no-repeat;
+  background-size:100vw;
+  background-position:0% 100%;
+}
+
+.co2-problem2-container img {
+  width: 100vw;
+}
+
+.co2-problem2-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.co2-problem2-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top:10vh;
+  color:#455228;
+}
+
+.co2-problem2-wrapper ul #text1 {
+  font-size:10vh;
+  font-weight:800;
+  margin-bottom: 1vh;
+  color:white;
+  font-family:"Lily Script One";
+  opacity:0;
+}
+
+.co2-problem2-wrapper ul #text2 {
+  font-size: 10vh;
+  font-weight: 600;
+  text-shadow: -0.2vw 0.2vh 0 #7CC23D;
+  opacity: 0;
+}
+
+.co2-problem2-wrapper ul .line {
+  width: 75vw;
+  height: 1px;
+  border-bottom: 1px solid #21588E;
+  opacity:0;
+}
+
+.co2-problem2-wrapper ul #text3 {
+  text-align: center;
+  font-size: 2.4vh;
+  margin-bottom: 2vh;
+  width:50vw;
+  opacity:0;
+}
+
+.co2-problem2-wrapper ul li button {
+  border: none;
+  background-color:#adbbc6;
+  border-style:dotted;
+  color: white;
+  text-align: center;
+  font-size: 2.6vh;
+  font-weight:500;
+  height:9vh;
+  width:28vh;
+  margin-bottom:-10vh;
+  cursor: pointer;
+  font-family:Avenir Next;
+  font-weight:bold;
+  opacity:0;
+}
+
+.co2-problem2-container #img1 {
+  position: absolute;
+  bottom: 0vh;
+}
+
+.co2-problem2-container #img2 img{
+  width: 5vw;
+  position: absolute;
+  left: 37vw;
+  top: 80vh;
+}
+
+.co2-problem2-container #img4 img{
+  width: 1vw;
+  position: absolute;
+  right: 26vw;
+  top: 69vh;
+}
+
+.co2-problem2-container #img5 img{
+  width: 5vw;
+  position: absolute;
+  right: 9vw;
+  top: 95vh;
+}
+
+.spaceholder {
+  height: 130vh;
+}
+
+.doc-data-container {
+  height: 150vh;
+}
+
+.form-container{
+  width:100%;
+}
+
+.doc-data-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.doc-data-container #text1 {
+  font-size: 5vh;
+  font-weight: bold;
+  margin-top: 12vh;
+}
+
+.doc-data-container #text2 {
+  margin-top: 3vh;
+}
+
+.doc-data-container .line {
+  width: 50vw;
+  height: 1px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 5vh;
+}
+
+
+.chart-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.calc-container{
+  margin: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.calc {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.calc table th {
+  font-size: 3vh;
+}
+
+.plane-container{
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.plane-container #title {
+  font-size: 5vh;
+}
+
+.chart-container {
+  width: 56vw;
+  margin-bottom: 5vh;
+}
+
+.chart-container2 {
+  width: 40vw;
+}
+
+.chart-container3 {
+  width: 40vw;
+  margin-left: 3vw;
+}
+
+.flight-container {
+  height: 150vh;
+}
+
+.flight-wrapper {
+  position: relative;
+}
+
+.flight-container #text1 {
+  font-size: 5vh;
+  font-weight: bold;
+  margin-top: 40vh;
+}
+
+.flight-container .line {
+  width: 50vw;
+  height: 1px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 5vh;
+}
+
+.flight-container img #bottom {
+}
+
+.flight-container img #lp {
+  position: absolute;
+  bottom:20vh;
+}
