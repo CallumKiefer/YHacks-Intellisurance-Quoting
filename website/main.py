@@ -52,10 +52,10 @@ def gettingdata():
     except:
         pass
     prices = regression_file.get_data(age, lon, *pre_existing)
-    model_training.get_data(city, age, lon, gender, state, lat, coverage, opinsured, income, married_status, height, weight, smoke, *pre_existing)
+ #   model_training.get_data(city, age, lon, gender, state, lat, coverage, opinsured, income, married_status, height, weight, smoke, *pre_existing)
     return render_template("results.html", plan_prices = prices)
 
 
 if __name__ == '__main__':
-    import model_training
+ #   import model_training
     app.run()
