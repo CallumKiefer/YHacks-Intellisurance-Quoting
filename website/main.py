@@ -51,9 +51,9 @@ def gettingdata():
         pre_existing.append(request.form.get("c5"))
     except:
         pass
-    regression_file.get_data(age, lon, *pre_existing)
+    prices = regression_file.get_data(age, lon, *pre_existing)
     model_training.get_data(city, age, lon, gender, state, lat, coverage, opinsured, income, married_status, height, weight, smoke, *pre_existing)
-    return "yay"
+    return render_template("results.html", plan_prices = prices)
 
 
 if __name__ == '__main__':

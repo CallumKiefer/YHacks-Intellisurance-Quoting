@@ -1,3 +1,4 @@
+import math
 from sklearn import linear_model
 from sklearn.externals import joblib
 
@@ -38,7 +39,7 @@ def get_data(age, longitude, *pre_existing):
     reg = joblib.load("personal_risk_reg.pkl")
     personal_risk = reg.predict([plan_multiple, age])
 
-    return personal_risk + plan_multiple, \
-           personal_risk + plan_multiple * 3, \
-           personal_risk + plan_multiple * 6, \
-           personal_risk + plan_multiple * 10
+    return [(math.ceil((personal_risk + plan_multiple)*100)/100, "Bronze"), \
+            (math.ceil((personal_risk + plan_multiple * 3)*100)/100, "Silver"), \
+            (math.ceil((personal_risk + plan_multiple * 6)*100)/100, "Gold"), \
+            (math.ceil((personal_risk + plan_multiple * 10)*100)/100, "Platinum")]

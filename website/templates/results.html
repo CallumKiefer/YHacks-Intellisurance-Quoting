@@ -27,12 +27,14 @@
   </div>
   <div class="formcontent">
     <!–– STARTS HERE -->
-    <div class="results">
+    {% for prices in plan_prices %}
+      <div class="results">
       <div class="resnum">
-      <h3><center>BRONZE</center></h3>
-      <h2>$2239</h2>
+      <h3><center>{{prices[1]}}</center></h3>
+      <h2>${{prices[0]}}</h2>
     </div>
     </div>
+      {% endfor %}
 
     </div>
 
