@@ -57,5 +57,4 @@ def gettingdata():
 
 
 if __name__ == '__main__':
-    # import model_training
     app.run()
