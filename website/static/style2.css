@@ -56,7 +56,7 @@ top{
   width:49%;
   float:left;
   text-align:left;
-  margin-bottom:3vh;
+  margin-bottom:7vh;
 
 }
 
@@ -64,18 +64,18 @@ top{
   width:49%;
   float:right;
   text-align:left;
-  margin-bottom:3vh;
+  margin-bottom:7vh;
 
 }
 
 .otherformleft{
-  width:49%;
+  width:5%;
   float:left;
-  text-align:right;
+  text-align:left;
 }
 
 .otherformright{
-  width:49%;
+  width:95%;
   float:right;
   text-align:left;
 
