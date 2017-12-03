@@ -115,7 +115,7 @@ input[type=submit]:hover {
     width: 38vh;
     border-radius: 3px;
     overflow: hidden;
-    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+    background: #fafafa url("https://www.materialui.co/materialIcons/navigation/arrow_drop_down_grey_192x192.png") 97% / 15% no-repeat ;
     display:inline-block;
     margin-top:2vh;
 }
