@@ -43,50 +43,56 @@
 
 <div class="formcontent">
   <form action="">
+    <center><b>Personal Details:<br></b></center><br>
     <label for="fname">First Name &nbsp;&nbsp;</label>
-    <input type="text" id="fname" name="firstname" placeholder="First name" size="30" maxlength="30">
+    <input type="text" id="fname" name="firstname" placeholder="First name" size="31" maxlength="30">
     <label for="mname">&nbsp;&nbsp;&nbsp;&nbsp;   Middle Initial &nbsp;&nbsp;</label>
     <input type="text" id="mname" name="middleinitial" placeholder="M" size="2" maxlength="2">
     <label for="lname">&nbsp;&nbsp;&nbsp;&nbsp;   Last Name &nbsp;&nbsp;</label>
-    <input type="text" id="lname" name="lastname" placeholder="Last name" size="30" maxlength="30">
+    <input type="text" id="lname" name="lastname" placeholder="Last name" size="31" maxlength="30">
 <br>
 <div class="radiobuttonleft">
-  <label for="gender">gender&nbsp;&nbsp;</label>
+  <label for="gender">Gender&nbsp;&nbsp;</label>
+  <div class="select-style">
   <select>
-    <option value="m">male</option>
-    <option value="f">female</option>
-    <option value="o">other</option>
+    <option value="m">Male</option>
+    <option value="f">Female</option>
+    <option value="o">Other</option>
   </select>
+</div>
 
   <br>
 
-  <label for="fname">City&nbsp;&nbsp;</label>
+  <label for="fname">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
   <input type="text" id="city" name="city" placeholder="City" size="35">
 
 <br>
 
 
-<label for="height">Height&nbsp;&nbsp;</label>
-<input type="text" id="height" name="height" placeholder="height">
+<label for="height">Height&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="height" name="height" placeholder="height" size="35" maxlength="2" >
 
 <br>
 
 
-<label for="smoke">Smoker?&nbsp;&nbsp;</label>
+<label for="smoke">Smoker&nbsp;&nbsp;</label>
+<div class="select-style">
 <select>
-  <option value="yes">yes</option>
-  <option value="no">no</option>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
 </select>
-  </div>
+  </div></div>
 <div class="radiobuttonright">
 
 
-  <label for="month">Age&nbsp;&nbsp;</label>
-  <input type="text" id="age" name="age" placeholder="age">
+  <label for="month">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="age" name="age" placeholder="age" size="35" maxlength="2">
   <br>
 
-<label for="mname">&nbsp;&nbsp;&nbsp;&nbsp;State&nbsp;&nbsp;</label>
+<label for="mname">State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<div class="select-style">
 <select>
+  <option value="Select">Select</option>
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -139,73 +145,64 @@
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
 </select>
+</div>
 <br>
-<label for="weight">weight&nbsp;&nbsp;</label>
-<input type="text" id="weight" name="weight" placeholder="weight">
+<label for="weight">Weight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="weight" name="weight" placeholder="weight" size="35" maxlength="3">
 <br>
-<br>
-<label for="income">income&nbsp;&nbsp;</label> $&nbsp;
-<input type="text" id="income" name="income" placeholder="0">
+<label for="income">Income&nbsp;&nbsp;</label> $&nbsp;
+<input type="text" id="income" name="income" placeholder="0" size="35">
 <br>
 </div>
-<b>Plan Type</b><br>
-<label for="people">people covered&nbsp;&nbsp;</label>
+<label for="ptype"><b><br>Plan Type:</b>&nbsp;&nbsp;</label><br>
+
+<label for="people">People covered&nbsp;&nbsp;</label>
+<div class="select-style">
+
 <select>
-  <option value="self">self</option>
-  <option value="selffam">self and spouse</option>
-  <option value="selffam">family</option>
+  <option value="self">Self</option>
+  <option value="selffam">Self and spouse</option>
+  <option value="selffam">Family</option>
 </select>
+</div>
 <br>
-<label for="marrstat">marital status&nbsp;&nbsp;</label>
+<label for="marrstat">Marital status:&nbsp;&nbsp;</label>
+<div class="select-style">
 <select>
-  <option value="sing">single</option>
-  <option value="marr">married</option>
-  <option value="div">divorced</option>
-  <option value="widow">widowed</option>
-  <option value="engaged">engaged</option>
+  <option value="sing">Single</option>
+  <option value="marr">Married</option>
 </select>
-<br>
+</div><br>
 <label for="optional">Optional insured:&nbsp;&nbsp;</label>
-<input type="radio" name="op" />$500k&nbsp;&nbsp;</input>
-<input type="radio" name="op" />other:&nbsp;&nbsp;</input><input type="text" id="opother" name="opother" placeholder="$">
-<br>
-<label for="optional"><b>Pre-Existing Conditions:</b>&nbsp;&nbsp;</label><br>
-<div class="radiobuttonleft">
-<input type="radio" name="op1" />&nbsp;Cough with hemorrhage&nbsp;&nbsp;</input><br>
-<input type="radio" name="op2" />&nbsp;Ataxic cerebral palsy&nbsp;&nbsp;</input><br>
-<input type="radio" name="op3" />&nbsp;Other abnormalities of heart beat&nbsp;&nbsp;</input><br>
-<input type="radio" name="op4" />&nbsp;Displacement of permanent\xa0sutures&nbsp;&nbsp;</input><br>
-<input type="radio" name="op5" />&nbsp;Initial encounter&nbsp;&nbsp;</input><br>
-<input type="radio" name="op6" />&nbsp;Peanut allergy&nbsp;&nbsp;</input><br>
-<input type="radio" name="op7" />&nbsp;Broken internal left hip prosthesis, initial encounter&nbsp;&nbsp;</input><br>
-<input type="radio" name="op8" />&nbsp;Unspecified fracture of metacarpal bone&nbsp;&nbsp;</input><br>
-<input type="radio" name="op9" />&nbsp;Obstructive sleep apnea&nbsp;&nbsp;</input><br>
+<input type="radio" name="op" />&nbsp;$500k&nbsp;&nbsp;</input>
+<input type="radio" name="op" />&nbsp;Other:&nbsp;&nbsp;</input><input type="text" id="opother" name="opother" placeholder="$">
+<br><br>
+<label for="optional"><b><center>Pre-Existing Conditions:</center></b>&nbsp;&nbsp;</label><br>
+<div class="otherformleft">
+  <label for="op">Cough with hemmorage&nbsp;&nbsp;</label><br>
+  <label for="op2">Cocaine abuse with intoxicatiuon delirium&nbsp;&nbsp;</label><br>
+  <label for="op3">Tachycardia&nbsp;&nbsp;</label><br>
+  <label for="op4">Diarrhea&nbsp;&nbsp;</label><br>
+  <label for="op5">Rheumatoid lung disease&nbsp;&nbsp;</label>
+</div>
+<div class="otherformright">
+<input type="radio" name="y1" />&nbsp;Yes&nbsp;&nbsp;</input>
+<input type="radio" name="n1" />&nbsp;No&nbsp;&nbsp;</input><br>
+<input type="radio" name="y2" />&nbsp;Yes&nbsp;&nbsp;</input>
+<input type="radio" name="n2" />&nbsp;No&nbsp;&nbsp;</input><br>
+<input type="radio" name="y3" />&nbsp;Yes&nbsp;&nbsp;</input>
+<input type="radio" name="n3" />&nbsp;No&nbsp;&nbsp;</input><br>
+<input type="radio" name="y4" />&nbsp;Yes&nbsp;&nbsp;</input>
+<input type="radio" name="n4" />&nbsp;No&nbsp;&nbsp;</input><br>
+<input type="radio" name="y5" />&nbsp;Yes&nbsp;&nbsp;</input>
+<input type="radio" name="n5" />&nbsp;No&nbsp;&nbsp;</input><br>
 
 </div>
-<div class="radiobuttonright">
-<input type="radio" name="op10" />&nbsp;Tachycardia&nbsp;&nbsp;</input><br>
-<input type="radio" name="op11" />&nbsp;Diarrhea&nbsp;&nbsp;</input><br>
-<input type="radio" name="op12" />&nbsp;Type 2 diabetes mellitus with hyperglycemia&nbsp;&nbsp;</input><br>
-<input type="radio" name="op13" />&nbsp;HIV disease resulting in other bacterial infections&nbsp;&nbsp;</input><br>
-<input type="radio" name="op14" />&nbsp;Rheumatoid lung disease with rheumatoid arthritis&nbsp;&nbsp;</input><br>
-<input type="radio" name="op15" />&nbsp;Cocaine abuse with intoxicatiuon delirium&nbsp;&nbsp;</input><br>
-<input type="radio" name="op16" />&nbsp;Alcohol abuse with intoxication delirium&nbsp;&nbsp;</input><br>
-<input type="radio" name="op17" />&nbsp;Chronic kidney disease, unspecified&nbsp;&nbsp;</input><br>
-<input type="radio" name="op18" />&nbsp;None of the above&nbsp;&nbsp;</input><br>
-
-
-</div>
-
-
-
-
-
-
-
 <br>
 <br>
-
-    <input type="submit" value="Submit">
+<br>
+<center>
+    <input type="submit" value="Submit"></center>
   </form>
 </div>
 </div>
