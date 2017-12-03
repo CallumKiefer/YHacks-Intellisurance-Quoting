@@ -3,7 +3,7 @@ body {
   padding:0;
   background-size: cover;
   background-color: #c3d0db;
-  font-family: "Source Sans Pro";
+  font-family: Trebuchet MS;
   color:#455228;
 }
 
@@ -102,7 +102,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     font-size:2.5vh;
-    font-family:"Source Sans Pro";
+    font-family:Trebuchet MS;
 }
 input[type=submit]:hover {
     opacity:0.6;
@@ -186,7 +186,7 @@ input[type=submit]:hover {
   text-align: center;
   font-size: 2.5vh;
   margin-bottom: 2vh;
-  width:50vw;
+  width:45vw;
   opacity:0;
 }
 
@@ -202,7 +202,7 @@ input[type=submit]:hover {
   width:28vh;
   margin-bottom:-10vh;
   cursor: pointer;
-  font-family:"Source Sans Pro";
+  font-family:Trebuchet MS;
   font-weight:bold;
   opacity:0;
 }

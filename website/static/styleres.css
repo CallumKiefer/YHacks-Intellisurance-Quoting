@@ -3,7 +3,7 @@ body {
   padding:0;
   background-size: cover;
   background-color: #c3d0db;
-  font-family: "Source Sans Pro";
+  font-family: Trebuchet MS;
   color:#455228;
 }
 
@@ -17,6 +17,7 @@ top{
 }
 
 .formcontainer{
+  text-transform:capitalize;
 }
 
 .formcontainer h1{
@@ -53,7 +54,7 @@ top{
   height:55%;
   border-radius:1vh;
   background-color:white;
-  font-family:"Source Sans Pro";
+  font-family:Trebuchet MS;
   border-style:dashed;
   border-width:0.6vh;
   border-color:#a6b1bc;
@@ -63,7 +64,7 @@ top{
 
 .resnum{
   text-align: center;
-  margin-top:24%;
+  margin-top:22%;
 }
 
 .resnum h3{
@@ -71,6 +72,7 @@ top{
   font-size:2.5vw;
   font-weight:200;
   color:black;
+  text-transform:capitalize;
 }
 
 .resnum h2{
@@ -78,5 +80,15 @@ top{
   font-size:4vw;
   font-weight:800;
   color:black;
-  font-family:"Open Sans";
+  font-family:Trebuchet MS;
+  text-transform:capitalize;
+}
+
+.resnum h4{
+  margin-top:-3vw;
+  font-size:2.5vw;
+  font-weight:200;
+  color:black;
+  font-family:Trebuchet MS;
+  text-transform:capitalize;
 }

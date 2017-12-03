@@ -8,7 +8,7 @@
   <meta charset='utf-8' />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Lobster+Two|Lily+Script+One|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Lobster+Two|Lily+Script+One|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet" type='text/css'>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
@@ -19,7 +19,7 @@
 
 <body>
   <top>
-    <img src="../static/img/logo.png" alt="vitech" height="110%"/>
+    <a href="index2.html" /><img src="../static/img/logo.png" alt="vitech" height="110%"/></a>
   </top>
   <div class="co2-problem2-container" style="background-image:url(../static/img/treesroad.png);
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
         <li id="text3">We provide a life insurance product
           to over 1.4M customers. We offer 4 plans - Bronze, Silver, Gold and Platinum.
           The base price for all these 4 plans is fixed, but the monthly premium for the plan varies based
-          on different factors.</li>
+          on different factors. <a href="distrib.html" style="color:inherit; opacity:0.6"/>Check out our distributions.<a></li>
         <li><button>calculate now</button></li>
       </ul>
   </div>
@@ -55,7 +55,7 @@
     <input type="text" id="lname" name="lastname" placeholder="Last name" size="31" maxlength="30" required>
 <br>
 <div class="radiobuttonleft">
-  <label for="gender">Gender&nbsp;&nbsp;</label>
+  <label for="gender">Gender&nbsp;&nbsp;&nbsp;</label>
   <div class="select-style">
   <select name="gender" required>
     <option value="m">Male</option>
@@ -66,7 +66,7 @@
 
   <br>
 
-  <label for="fname">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <label for="fname">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
   <input type="text" id="city" name="city" placeholder="City" size="35" required>
 
 <br>
@@ -78,7 +78,7 @@
 <br>
 
 
-<label for="smoke">Smoker&nbsp;&nbsp;</label>
+<label for="smoke">Smoker&nbsp;&nbsp;&nbsp;</label>
 <div class="select-style">
 <select name="smoke" required>
   <option value="yes">Yes</option>
@@ -88,14 +88,14 @@
 <div class="radiobuttonright">
 
 
-  <label for="month">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <label for="month">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
   <input type="text" id="age" name="age" placeholder="Age" size="35" maxlength="2" required>
   <br>
-  <label for="zip">Zip Code&nbsp;&nbsp;&nbsp;</label>
+  <label for="zip">Zip Code&nbsp;&nbsp;&nbsp;&nbsp;</label>
   <input type="text" id="zip" name="zip" placeholder="Zip" size="35" maxlength="5" required><br>
 
 
-<label for="mname">State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<label for="mname">State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 <div class="select-style">
 <select name="states" required>
   <option value="Select">Select</option>
@@ -156,13 +156,13 @@
 <label for="weight">Weight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 <input type="text" id="weight" name="weight" placeholder="Weight" size="35" maxlength="3" required>
 <br>
-<label for="income">Income&nbsp;&nbsp;</label> $&nbsp;
+<label for="income">Income&nbsp;&nbsp;&nbsp;</label> $&nbsp;
 <input type="text" id="income" name="income" placeholder="0" size="35" required>
 <br>
 </div>
 <label for="ptype"><b><br><br>Plan Type:</b>&nbsp;&nbsp;</label><br>
 
-<label for="coverage">People covered&nbsp;&nbsp;</label>
+<label for="coverage">People covered&nbsp;&nbsp;&nbsp;</label>
 <div class="select-style">
 
 <select name="coverage" required>
