@@ -8,7 +8,7 @@
   <meta charset='utf-8' />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Lobster+Two|Lily+Script+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Lobster+Two|Lily+Script+One|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.41.0/mapbox-gl.css' rel='stylesheet' />
@@ -169,7 +169,7 @@
 </select>
 </div>
 <br>
-<label for="marrstat">Marital status:&nbsp;&nbsp;</label>
+<label for="marrstat">Marital status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 <div class="select-style">
 <select name="married_status" required>
   <option value="sing">Single</option>
@@ -256,7 +256,7 @@ AOS.init();
     let myChart = document.getElementById('cTotalPerTerm').getContext('2d');
     let newChart = document.getElementById('bySubClub').getContext('2d');
     let flightChart = document.getElementById('byMethod').getContext('2d');
-    Chart.defaults.global.defaultFontFamily = 'Avenir Next';
+    Chart.defaults.global.defaultFontFamily = 'Source Sans Pro';
     Chart.defaults.global.defaultFontSize = 14;
     Chart.defaults.global.defaultFontColor = '#777';
     let massPopChart = new Chart(myChart, {

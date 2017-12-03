@@ -1,0 +1,84 @@
+body {
+  margin:0;
+  padding:0;
+  background-size: cover;
+  background-color: #c3d0db;
+  font-family: "Source Sans Pro";
+  color:#455228;
+}
+
+top{
+  width:100vw;
+  height:9vh;
+  background-color:rgb(195, 208, 219, 0.6);
+  position:fixed;
+  z-index:100;
+  padding-left:3vh;
+}
+
+.formcontainer{
+  background-color:inherit;
+}
+
+.formcontainer h1{
+  text-align: center;
+  font-size:10vh;
+  font-weight:100;
+  color:white;
+}
+
+.formcontainer h2{
+  text-align: center;
+  margin-top:1vw;
+  font-size:10vh;
+  margin-bottom:1vw;
+  font-family:"Lily Script One";
+  color:white;
+  background-color:inherit;
+}
+
+.titleform{
+  background-color:#c3d0db;
+}
+
+.formcontent{
+  margin:auto;
+  width:88vw;
+  height:61%;
+  padding:2vw;
+  background-color:inherit;
+}
+
+.results{
+  width:20%;
+  margin-left:1vw;
+  height:55%;
+  border-radius:1vh;
+  background-color:white;
+  font-family:"Source Sans Pro";
+  border-style:dashed;
+  border-width:0.6vh;
+  border-color:#a6b1bc;
+  padding:2vh;
+  display:inline-block;
+}
+
+.resnum{
+  text-align: center;
+  margin-top:24%;
+}
+
+.resnum h3{
+  align-content: center;
+  font-size:2.5vw;
+  font-weight:200;
+  color:black;
+}
+
+.resnum h2{
+  margin-top:-3vw;
+  font-size:4vw;
+  font-weight:800;
+  color:black;
+  font-family:"Open Sans";
+}
