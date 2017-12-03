@@ -3,7 +3,7 @@ body {
   padding:0;
   background-size: cover;
   background-color: #c3d0db;
-  font-family: Avenir Next;
+  font-family: "Source Sans Pro";
   color:#455228;
 }
 
@@ -15,7 +15,6 @@ top{
   z-index:100;
   padding-left:3vh;
 }
-
 
 /**FORM**/
 
@@ -34,7 +33,7 @@ top{
 
 .formcontainer h2{
   text-align: center;
-  margin-top:-12vh;
+  margin-top:-11vh;
   font-size:10vh;
   font-family:"Lily Script One";
   color:white;
@@ -103,7 +102,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     font-size:2.5vh;
-    font-family:Avenir Next;
+    font-family:"Source Sans Pro";
 }
 input[type=submit]:hover {
     opacity:0.6;
@@ -137,10 +136,6 @@ input[type=submit]:hover {
   position: relative;
   background-color: #c3d0db;
   height: 100vh;
-  background-image:url(../img/treesroad.png);
-  background-repeat: no-repeat;
-  background-size:100vw;
-  background-position:0% 100%;
 }
 
 .co2-problem2-container img {
@@ -189,9 +184,9 @@ input[type=submit]:hover {
 
 .co2-problem2-wrapper ul #text3 {
   text-align: center;
-  font-size: 2.4vh;
+  font-size: 2.5vh;
   margin-bottom: 2vh;
-  width:50vw;
+  width:45vw;
   opacity:0;
 }
 
@@ -207,7 +202,7 @@ input[type=submit]:hover {
   width:28vh;
   margin-bottom:-10vh;
   cursor: pointer;
-  font-family:Avenir Next;
+  font-family:"Source Sans Pro";
   font-weight:bold;
   opacity:0;
 }
