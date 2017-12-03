@@ -17,7 +17,10 @@ top{
 }
 
 .formcontainer{
-  background-color:inherit;
+  background-image:url(../img/back.png);
+  background-repeat: no-repeat;
+  background-size:100vw;
+  background-position:0% 100%;
 }
 
 .formcontainer h1{
@@ -31,7 +34,6 @@ top{
   text-align: center;
   margin-top:1vw;
   font-size:10vh;
-  margin-bottom:1vw;
   font-family:"Lily Script One";
   color:white;
   background-color:inherit;
