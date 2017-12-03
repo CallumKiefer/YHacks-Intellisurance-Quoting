@@ -17,10 +17,6 @@ top{
 }
 
 .formcontainer{
-  background-image:url("../img/back.png");
-  background-repeat: no-repeat;
-  background-size:100vw;
-  background-position:0% 100%;
 }
 
 .formcontainer h1{
