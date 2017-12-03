@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/static/style2.css">
+  <link rel="stylesheet" href="../static/style2.css">
   <title>DOC-Carbon-Emissions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -43,11 +43,11 @@
 
 <div class="formcontent">
   <form action="/processing", method="post">
-    <center><b>Personal Details:<br></b></center><br>
+    <b>Personal Details:<br></b><br>
     <label for="fname">First Name &nbsp;&nbsp;</label>
     <input type="text" id="fname" name="firstname" placeholder="First name" size="31" maxlength="30" required>
     <label for="mname">&nbsp;&nbsp;&nbsp;&nbsp;   Middle Initial &nbsp;&nbsp;</label>
-    <input type="text" id="mname" name="middleinitial" placeholder="M" size="2" maxlength="2" required>
+    <input type="text" id="mname" name="middleinitial" placeholder="M.I." size="2" maxlength="2" required>
     <label for="lname">&nbsp;&nbsp;&nbsp;&nbsp;   Last Name &nbsp;&nbsp;</label>
     <input type="text" id="lname" name="lastname" placeholder="Last name" size="31" maxlength="30" required>
 <br>
@@ -88,7 +88,7 @@
   <label for="month">Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
   <input type="text" id="age" name="age" placeholder="Age" size="35" maxlength="2" required>
   <br>
-  <label for="fname">Zip Code&nbsp;&nbsp;&nbsp;</label>
+  <label for="zip">Zip Code&nbsp;&nbsp;&nbsp;</label>
   <input type="text" id="zip" name="zip" placeholder="Zip" size="35" maxlength="5" required><br>
 
 
@@ -177,23 +177,23 @@
 </select>
 </div><br>
 <label for="optional">Optional insured:&nbsp;&nbsp;</label>
-<input type="radio" name="op1" />&nbsp;$500k&nbsp;&nbsp;</input>
-<input type="radio" name="other" />&nbsp;Other:&nbsp;&nbsp;</input><input type="text" id="opother" name="opother" placeholder="$">
+<input type="checkbox" name="500k" />&nbsp;$500k&nbsp;&nbsp;</input>
+<input type="checkbox" name="other" />&nbsp;Other:&nbsp;&nbsp;</input><input type="text" id="opother" name="opother" placeholder="$">
 <br><br>
-<label for="optional"><b><center>Pre-Existing Conditions:</center></b>&nbsp;&nbsp;</label><br>
-<div class="otherformleft">
+<label for="optional"><b>Pre-Existing Conditions:<br></b>&nbsp;&nbsp;</label><br>
+<div class="otherformright">
   <label for="op">Cough with hemmorage&nbsp;&nbsp;</label><br>
   <label for="op2">Cocaine abuse with intoxicatiuon delirium&nbsp;&nbsp;</label><br>
   <label for="op3">Tachycardia&nbsp;&nbsp;</label><br>
   <label for="op4">Diarrhea&nbsp;&nbsp;</label><br>
   <label for="op5">Rheumatoid lung disease&nbsp;&nbsp;</label>
 </div>
-<div class="otherformright">
-<input type="checkbox" name="c1" />&nbsp;Yes&nbsp;&nbsp;</input>
-<input type="checkbox" name="c2" />&nbsp;Yes&nbsp;&nbsp;</input>
-<input type="checkbox" name="c3" />&nbsp;Yes&nbsp;&nbsp;</input>
-<input type="checkbox" name="c4" />&nbsp;Yes&nbsp;&nbsp;</input>
-<input type="checkbox" name="c5" />&nbsp;Yes&nbsp;&nbsp;</input>
+<div class="otherformleft">
+<input type="checkbox" name="c1" />&nbsp;&nbsp;&nbsp;</input><br>
+<input type="checkbox" name="c2" />&nbsp;&nbsp;&nbsp;</input><br>
+<input type="checkbox" name="c3" />&nbsp;&nbsp;&nbsp;</input><br>
+<input type="checkbox" name="c4" />&nbsp;&nbsp;&nbsp;</input><br>
+<input type="checkbox" name="c5" />&nbsp;&nbsp;&nbsp;</input><br>
 
 </div>
 <br>
