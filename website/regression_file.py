@@ -10,7 +10,6 @@ def get_data(age, longitude, *pre_existing):
         cond["R04.2"] = 1.
     else:
         cond["R04.2"] = 0.
-
     if pre_existing[1] == "on":
         cond["F14.121"] = 3.
     else:
