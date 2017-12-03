@@ -20,6 +20,7 @@ top{
 
 .formcontainer{
   background-color:#606C5D;
+  padding-bottom:9vh;
 }
 
 .formcontainer h1{
@@ -44,10 +45,36 @@ top{
 
 .formcontent{
   margin:auto;
-  width:85%;
+  width:70%;
   background-color:white;
-  padding:2vw;
+  padding:4vw;
   border-radius: 2vh;
+}
+
+.radiobuttonleft{
+  width:49%;
+  float:left;
+  text-align:left;
+}
+
+.radiobuttonright{
+  width:49%;
+  float:right;
+  text-align:left;
+
+}
+
+.otherformleft{
+  width:49%;
+  float:left;
+  text-align:left;
+}
+
+.otherformright{
+  width:49%;
+  float:right;
+  text-align:left;
+
 }
 
 input[type=text], select {
